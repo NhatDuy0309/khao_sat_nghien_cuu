@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoàn thành khảo sát</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --red: #e6290b;
+      --gold: #c9ca18;
+      --orange: #ed7d22;
+      --footer: #ededed;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .masthead {
+      position: relative;
+      height: clamp(160px, 17vw, 245px);
+      flex: 0 0 auto;
+    }
+
+    .red-band {
+      height: clamp(96px, 24.5vw, 232px);
+      background: var(--red);
+    }
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 7.7%;
+      display: block;
+      width: clamp(150px, 38.5vw, 365px);
+      aspect-ratio: 1;
+      object-fit: contain;
+      background: #fff;
+    }
+
+    main {
+      flex: 1 0 auto;
+      width: 100%;
+      padding: 0 20px 32px;
+      text-align: center;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0 auto 24px;
+      color: var(--gold);
+      font-size: clamp(25px, 4.2vw, 56px);
+      font-weight: 400;
+      line-height: 1.08;
+    }
+
+    h2 {
+      max-width: 1000px;
+      margin: 0 auto 12px;
+      color: var(--gold);
+      font-size: clamp(18px, 3.3vw, 42px);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .thank-you {
+      width: min(100%, 940px);
+      margin: 0 auto;
+      padding: 22px 12px;
+      background: var(--orange);
+      color: #fff;
+      font-size: clamp(19px, 3vw, 40px);
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    footer {
+      flex: 0 0 auto;
+      border-top: 3px solid var(--red);
+      padding: 12px 18px 14px;
+      background: var(--footer);
+      text-align: center;
+      font-size: clamp(14px, 2.3vw, 28px);
+      line-height: 1.45;
+    }
+
+    footer p { margin: 8px 0; }
+    footer a { color: #5696c7; text-decoration: none; }
+
+    @media (max-width: 480px) {
+      .masthead { height: 160px; }
+      .red-band { height: 96px; }
+      .logo { left: 7.7%; }
+      main { padding-right: 20px; padding-left: 20px; }
+      h1 { margin-bottom: 24px; }
+      h2 { margin-bottom: 10px; }
+      .thank-you { padding: 20px 8px; }
+      footer { padding: 10px 14px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <div class="red-band" aria-hidden="true"></div>
+      <!-- Put your logo image beside this HTML file and name it logo.png. -->
+      <img class="logo" src="logo.jpg" alt="Biểu trưng Ban Tuyên giáo">
+    </header>
+
+    <main>
+      <h1>BAN TUYÊN GIÁO TRUNG ƯƠNG</h1>
+      <h2>VỤ NGHIÊN CỨU - DƯ LUẬN XÃ HỘI</h2>
+      <p class="thank-you">
+        Trân trọng cảm ơn ông (bà)<br>
+        đã hoàn thành tham gia khảo sát
+      </p>
+    </main>
+
+    <footer>
+      <p>Bản quyền thuộc Vụ Nghiên cứu - Dư luận xã hội - Ban Tuyên giáo Trung ương</p>
+      <p>Địa chỉ: 6C đường Hoàng Diệu, phường Ba Đình, Hà Nội</p>
+      <p>Điện thoại: 080.45614 - 0902628886 - Email:<br>
+        <a href="mailto:vncdlxh@btgdvtw.dcs.vn">vncdlxh@btgdvtw.dcs.vn</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
