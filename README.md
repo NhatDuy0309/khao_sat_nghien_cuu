@@ -1,3 +1,4 @@
 ﻿# khao_sat_nghien_cuu
-Nội Bộ
-Vui Lòng Không Leak!!
+Tap Viet Html
+Lam Theo Website mau
+Mien Tru Trach Nhiem
